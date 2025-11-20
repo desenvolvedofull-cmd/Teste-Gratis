@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Grátis por 3 Dias - Ferramenta PC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#3b82f6',
+                hover: '#2563eb',
+              },
+              secondary: '#8b5cf6',
+              dark: {
+                900: '#0f172a',
+                800: '#1e293b',
+                700: '#334155',
+              }
+            },
+            keyframes: {
+              'subtle-pulse': {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0.8' },
+              },
+              'fade-in': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'walk': {
+                '0%': { transform: 'translateX(-150px) rotate(0deg)' },
+                '75%': { transform: 'translateX(calc(100vw - 180px)) rotate(0deg)' },
+                '80%': { transform: 'translateX(calc(100vw - 180px)) rotate(20deg)' },
+                '85%': { transform: 'translateX(calc(100vw - 180px)) rotate(0deg)' },
+                '100%': { transform: 'translateX(100vw) rotate(0deg)' },
+              },
+              'rainbow': {
+                '0%': { color: '#ef4444' }, // red
+                '14%': { color: '#f97316' }, // orange
+                '28%': { color: '#eab308' }, // yellow
+                '42%': { color: '#22c55e' }, // green
+                '57%': { color: '#06b6d4' }, // cyan
+                '71%': { color: '#3b82f6' }, // blue
+                '85%': { color: '#a855f7' }, // purple
+                '100%': { color: '#ef4444' }, // red
+              }
+            },
+            animation: {
+              'subtle-pulse': 'subtle-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'fade-in': 'fade-in 1s ease-out forwards',
+              'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+              'walk': 'walk 25s linear infinite',
+              'rainbow': 'rainbow 2s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-dark-900 text-slate-100 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
